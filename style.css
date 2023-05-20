@@ -1,0 +1,285 @@
+/*
+Theme Name: Wizzycreate Theme
+Author: Wisdom Odey
+Author URI: youtube.com/breedwizzy
+Version: 1.0
+Text Domain: wizzycreate
+Tags: left-sidebar, responsive, fance
+Theme Name: Wizzycreate Theme, (C) 2020 WordPress.org
+Theme Name: Wizzycreate Theme is distributed under the terms of the GNU GPL.
+*/
+
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #ee3577;
+    --red: #dc3545;
+    --orange: #f68e62;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #767575;
+    --gray-dark: #434242;
+    --primary: #6f42c1;
+    --secondary: #4f4f4f;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #c2c2c2;
+    --lightgray: #eeeeee;
+    --dark: #434242;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* Font Sizes */
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+    /* Sidebar */
+    --sidebar-width: 280px;
+    --content-max-width: 1500px;
+}
+
+
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.main-wrapper {
+    min-height: 100%;
+}
+
+.footer {
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20;
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    height: 15%;
+    color: #fff;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+
+nav ul {
+    padding-top: 2%;
+    float: right;
+    margin-right: 30px;
+    height: 100%;
+
+
+}
+
+
+
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+
+
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #c2c2c2;
+    border-radius: 0%;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+nav ul li a {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-underline-position: unset;
+
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown select {
+    width: 100%;
+    height: 200%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    height: 200%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+
+    text-align: center;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.dropdown-menu li a:hover {
+    background-color: transparent;
+}
+
+
+
+
+.ibl-logo {
+    position: relative;
+    left: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+
+.lazyload {
+    margin-top: 1.2px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.github-logo {
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.contactus-class {
+    border: 1px solid rgb(255, 249, 249);
+    border-radius: 1px;
+    width: 170px;
+    text-align: center;
+
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        height: 100%;
+        position: fixed;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+
+    .ibl-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contactus-class {
+
+        margin-left: 70px;
+    }
+
+
+
+    nav ul li {
+        display: block;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+}
