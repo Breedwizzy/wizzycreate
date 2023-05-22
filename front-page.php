@@ -33,7 +33,7 @@
                         width="300" alt="" class="image-7">
                 </a>
 
-                <ul class='nav-ul'>
+                <ul class='nav-ul' id='navul-id'>
                     <li><a href="#">AI Mentor</a></li>
                     <li><a href="#">AI Analytics</a></li>
                     <li><a href="#">AI Skills</a></li>
@@ -45,30 +45,45 @@
                             <li><a href="#">Testimonials</a></li>
                         </ul>
                     </li>
-                    <a href="#">
-                        <img class="github-logo aws-logo grey-logo" href="#"
-                            src='https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/github-1.png'
-                            width="30">
-                    </a>
 
-                    <a href="#">
-                        <img class="lazyload aws-logo grey-logo" href="#"
-                            src='https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/aws-logo-c.png'
-                            width="50">
-                    </a>
+                    <li>
+                        <a href="#">
+                            <img class="github-logo aws-logo grey-logo" href="#"
+                                src='https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/github-1.png'
+                                width="30">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="lazyload aws-logo grey-logo" href="#"
+                                src='https://ibleducation.com/wp-content/themes/ibl-web-ibleducation-theme/img/aws-logo-c.png'
+                                width="50">
+                        </a>
+                    </li>
 
                     <li class='contactus-class'>
                         <a href="#">Contact Us</a>
                     </li>
 
                 </ul>
-                <label for='check' class='checkbtn'>
-                    <i class='fas fa-bars'></i>
 
-                </label>
+
             </nav>
 
-            <hr>
+            <div class='toggle-btn' onclick='myFunction();'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <script type='text/javascript'>
+
+                function myFunction() {
+                    var navbar = document.getElementById('')
+                }
+            </script>
+
 
         </header>
 
@@ -104,6 +119,16 @@
     <?php
     wp_footer();
     ?>
+
+
+    <script type='text/javascript'>
+
+        function myFunction() {
+            var navbar = document.getElementById('navul-id');
+            navbar.classList.toggle('show');
+        }
+
+    </script>
 
 </body>
 
